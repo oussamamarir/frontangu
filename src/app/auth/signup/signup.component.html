@@ -1,0 +1,68 @@
+<div class="signup-container">
+  <div class="left-section">
+    <img src="/assets/poor.jpg" alt="Logo" class="logo" />
+    <h1 class="welcome-text">Get Started</h1>
+    <p class="signup-subtext">Getting started is easy</p>
+
+    <div class="social-buttons">
+      <button class="social-button" (click)="openLink('https://www.google.com')">
+        <img src="/assets/google.jpeg" alt="Google" class="icon" />
+        Google
+      </button>
+      <button class="social-button" (click)="openLink('https://www.facebook.com')">
+        <img src="/assets/face.jpeg" alt="Facebook" class="icon" />
+        Facebook
+      </button>
+    </div>
+
+    <p class="or-continue-text">Or continue with</p>
+
+    <form>
+      <label for="fullName">Full Name</label>
+      <input
+        id="fullName"
+        type="text"
+        placeholder="Enter your full name"
+        [(ngModel)]="name"
+        name="fullName"
+      />
+
+      <label for="email">Email</label>
+      <input
+        id="email"
+        type="email"
+        placeholder="Enter your email"
+        [(ngModel)]="email"
+        name="email"
+      />
+
+      <label for="password">Password</label>
+      <input
+        id="password"
+        type="password"
+        placeholder="Enter your password"
+        [(ngModel)]="password"
+        name="password"
+      />
+
+      <label for="confirmPassword">Confirm Password</label>
+      <input
+        id="confirmPassword"
+        type="password"
+        placeholder="Confirm your password"
+        [(ngModel)]="confirmPassword"
+        name="confirmPassword"
+      />
+    </form>
+
+    <button class="signup-button" (click)="registerUser()">Create Account</button>
+
+    <div class="existing-account">
+      <p>
+        You have an account? <a routerLink="/signin">Sign In</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="right-section"></div>
+</div>

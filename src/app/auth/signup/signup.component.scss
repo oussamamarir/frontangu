@@ -1,0 +1,133 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+
+  .left-section {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+
+    .logo {
+      display: block;
+      width: 50px;
+      margin: 0 auto 20px;
+    }
+
+    h1.welcome-text {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 10px;
+    }
+
+    p.signup-subtext {
+      text-align: center;
+      font-size: 1rem;
+      color: #000;
+      margin-bottom: 20px;
+    }
+
+    .social-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      .social-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: bold;
+        width: 48%;
+        padding: 10px;
+        border: 1px solid #000;
+        background-color: #fff;
+        color: #000;
+        cursor: pointer;
+
+        .icon {
+          width: 20px;
+          margin-right: 8px;
+        }
+      }
+    }
+
+    p.or-continue-text {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 14px;
+      color: #000;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #000;
+      }
+
+      input {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #000;
+        border-radius: 4px;
+        font-size: 14px;
+        color: #000;
+        background-color: #fff;
+
+        &:focus {
+          outline: none;
+          border-color: #000;
+        }
+      }
+    }
+
+    .signup-button {
+      width: 100%;
+      padding: 10px;
+      background-color: #000;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: none;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #333;
+      }
+    }
+
+    .existing-account {
+      text-align: center;
+      margin-top: 15px;
+
+      a {
+        color: #000;
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .right-section {
+    flex: 1;
+    background-image: url('/assets/poor.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+}

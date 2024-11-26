@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="49px" viewBox="0 0 68 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>courier</title>
+    <g id="PAGES" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="10_What-we-do-2" transform="translate(-770.000000, -884.000000)">
+            <g id="courier" transform="translate(771.000000, 885.714286)">
+                <path d="M2.67808273,33.3668936 L19.354238,38.2857143 L19.354238,0.285714286 L2.5190282,6.75077891 C1.05365636,7.03128262 -0.00359205232,8.30184839 9.17189415e-06,9.77804062 L9.17189415e-06,30.3396319 C9.17189415e-06,31.8526233 1.14831445,33.1456362 2.67937585,33.3668936 L2.67808273,33.3668936 Z M46.9999914,32.8936841 L19.354238,38.2857143 L19.354238,0.285714286 L44.4796799,4.73260443 C45.945566,5.01256994 47.0034743,6.28327643 46.9999914,7.75986614 L46.9999914,32.8936841" id="Shape" stroke="#222221" stroke-width="1.2" fill="#FFFFFF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M47,10.9105559 L19.3534737,7.66087271 L0,13.2857143 M29.59015,8.84845193 L29.59015,3.28571429 M39.2513688,10.0360311 L39.2513688,4.91055586" id="Shape" stroke="#222221" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <polygon id="Path" fill="#FFFFFF" fill-rule="nonzero" points="19 38.6680181 43.5038985 46.2857143 67 38.6680181 46.307592 33.2857143"></polygon>
+                <path d="M19,38.3228287 L39.6895575,44.6905249 C42.3215845,45.5053828 45.1447028,45.4830321 47.7632797,44.626605 L64.3515308,39.3008026 C65.2421665,39.0169984 65.2099438,37.7245389 64.2883742,37.5033762 L46.5555726,32.9011465 L19,38.3228287 L19,38.3228287 Z M46.5555726,32.9331064 L19,29.7486192 M32.8892769,16.4162154 L32.8892769,13.7354166 C32.8892769,12.947924 33.5247087,12.2857143 34.350899,12.2857143 L34.4462782,12.2857143 L36.8616925,12.6014784 C37.6429859,12.6376057 38.2582576,13.2754196 38.2601581,14.0511807 L38.2601581,16.7307011" id="Shape" stroke="#222221" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <polygon id="Path" stroke="#222221" stroke-width="1.2" fill="#FFC244" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" points="44 36.8319528 29 38.2857143 29.6883997 16.2857143 42.9356478 17.5497432"></polygon>
+                <polygon id="Path" stroke="#222221" stroke-width="1.2" fill="#FFC244" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" points="29.2776085 38.2857143 23 36.356452 24.742003 17.739391 30 16.2857143"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
