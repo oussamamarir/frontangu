@@ -1,0 +1,14 @@
+<div class="order-details">
+    <h1>{{ selectedDish.name }}</h1>
+    <img [src]="selectedDish.image" alt="{{ selectedDish.name }}" />
+    <p>Price: {{ selectedDish.price | currency:'USD' }}</p>
+    <p>Ingredients: {{ selectedDish.ingredients }}</p>
+    <p>Rating: {{ selectedDish.rating }} ★</p>
+  
+    <div class="order-actions">
+      <button (click)="addToCart()">Add to Cart</button>
+      <button (click)="removeFromCart()">Remove from Cart</button>
+      <button (click)="stopOrdering()">Stop Ordering</button>
+    </div>
+  </div>
+  

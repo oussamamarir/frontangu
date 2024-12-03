@@ -33,4 +33,15 @@
     height: 1px;
     background-color: white; /* White line */
   }
-  
+  .nav-links {
+    .btn-login {
+      background-color: #1e1e1e;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  }

@@ -1,20 +1,32 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../services/cart.service';
+import { Dish } from '../models/dish.model';
 
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
+  styleUrls: ['./cart.component.scss']
 })
 export class CartComponent implements OnInit {
-  cartItems: any[] = [];  // Define cartItems as an array
+  cartItems: Dish[] = [];
+  totalPrice: number = 0;
 
   constructor(private cartService: CartService) {}
 
   ngOnInit(): void {
-    // Retrieve items from the CartService
     this.cartItems = this.cartService.getCart();
+    this.calculateTotalPrice();
+  }
 
-    // Debugging: Log the cart items to confirm they are being retrieved
-    console.log('Cart items:', this.cartItems);
+  // Calculate the total price of the items in the cart
+  calculateTotalPrice(): void {
+    this.totalPrice = this.cartItems.reduce((total, item) => total + item.price, 0);
+  }
+
+  // Remove an item from the cart
+  removeFromCart(dishId: string): void {
+    this.cartService.removeFromCart(dishId);
+    this.cartItems = this.cartService.getCart();  // Update the cart display
+    this.calculateTotalPrice();  // Recalculate the total price
   }
 }

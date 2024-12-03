@@ -1,18 +1,31 @@
 import { Injectable } from '@angular/core';
+import { Dish } from '../models/dish.model';
 
 @Injectable({
-  providedIn: 'root', // Ensures the service is available throughout the app
+  providedIn: 'root',
 })
 export class CartService {
-  private cart: any[] = [];  // Cart items array
+  private cart: Dish[] = [];  // Cart will store added dishes
 
-  addToCart(dish: any) {
-    console.log('Adding item to cart:', dish); // Debugging: Log when an item is added
+  constructor() {}
+
+  // Get the current cart items
+  getCart(): Dish[] {
+    return this.cart;
+  }
+
+  // Add a dish to the cart
+  addToCart(dish: Dish): void {
     this.cart.push(dish);
   }
 
-  getCart() {
-    console.log('Fetching cart items:', this.cart); // Debugging: Log current cart items
-    return this.cart;
+  // Remove a dish from the cart
+  removeFromCart(dishId: string): void {
+    this.cart = this.cart.filter(dish => dish.id !== dishId);
+  }
+
+  // Clear the entire cart
+  clearCart(): void {
+    this.cart = [];
   }
 }

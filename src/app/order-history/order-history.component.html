@@ -1,0 +1,21 @@
+<div class="order-history-container">
+  <h1>Order History</h1>
+
+  <div *ngFor="let order of orders">
+    <div class="order">
+      <p><strong>Order Date:</strong> {{ order.date | date }}</p>
+      <p><strong>Total Price:</strong> {{ order.totalPrice | currency }}</p>
+
+      <div class="order-items">
+        <div *ngFor="let item of order.items">
+          <p>{{ item.name }} (x{{ item.quantity }}) - {{ item.price | currency }}</p>
+        </div>
+      </div>
+    </div>
+    <hr />
+  </div>
+
+  <div *ngIf="orders.length === 0">
+    <p>No orders found.</p>
+  </div>
+</div>

@@ -1,4 +1,23 @@
-<h2>Your Cart</h2>
-<div *ngFor="let item of cartItems">
-  <p>{{ item.name }} - {{ item.price | currency }}</p>
-</div>
+<div class="cart-container">
+    <h1>Your Cart</h1>
+  
+    <!-- If the cart is empty -->
+    <div *ngIf="cartItems.length === 0">
+      <p>Your cart is empty!</p>
+    </div>
+  
+    <!-- If the cart has items -->
+    <div *ngIf="cartItems.length > 0">
+      <div class="cart-item" *ngFor="let item of cartItems">
+        <img [src]="item.image" alt="{{ item.name }}" />
+        <p>{{ item.name }} - {{ item.price }} MAD</p>
+        <button (click)="removeFromCart(item.id)">Remove</button>
+      </div>
+  
+      <!-- Display the total price -->
+      <div class="total-price">
+        <p>Total: {{ totalPrice }} MAD</p>
+      </div>
+    </div>
+  </div>
+  

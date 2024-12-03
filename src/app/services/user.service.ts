@@ -1,12 +1,13 @@
+// user.service.ts
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UserService {
-  private apiUrl = 'http://localhost:8080'; // Replace with your backend base URL
+  private apiUrl = 'http://localhost:8080'; // Backend URL
 
   constructor(private http: HttpClient) {}
 
@@ -24,18 +25,14 @@ export class UserService {
       }),
     });
   }
-  
 
-  // Get user profile
-  getUserProfile(userId: number): Observable<any> {
-    return this.http.get(`${this.apiUrl}/users/profile`, {
-      params: { userId: userId.toString() }
-    });
+  // Get the user's profile (no need for userId in this case, assuming user is logged in)
+  getUserProfile(): Observable<any> {
+    return this.http.get(`${this.apiUrl}/users/profile`);
   }
 
-  // Simulated Auth Login (if needed)
-  simulatedLogin(username: string, password: string): Observable<any> {
-    const loginRequest = { username, password };
-    return this.http.post(`${this.apiUrl}/api/login`, loginRequest);
+  // Update user profile
+  updateUserProfile(user: any): Observable<any> {
+    return this.http.put(`${this.apiUrl}/users/update`, user); // Ensure endpoint is correct
   }
 }

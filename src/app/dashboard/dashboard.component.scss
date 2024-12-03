@@ -1,201 +1,223 @@
 /* Hero Section Layout */
 .hero-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #ffffff; /* Background color matches the image */
-  min-height: 400px; /* Adjust as needed */
-  gap: 30px;
-}
-
-/* Video Container */
-.video-container {
-  flex: 1; /* Takes up equal space */
-  max-width: 50%; /* Restrict width */
-}
-
-.video-container video {
-  width: 100%; /* Full width */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Optional for rounded corners */
-}
-
-/* Titles Container */
-.titles-container {
-  flex: 1;
-  max-width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 15px; /* Space between elements */
-}
-
-.titles-container h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #000;
-  margin: 0;
-}
-
-.titles-container h2 {
-  font-size: 1.5rem;
-  color: #333;
-  margin: 0;
-}
-
-/* Location Input */
-.location-input {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.location-input input {
-  width: 300px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-.current-location-btn {
-  background-color: #e8f5e9;
-  color: #2e7d32;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.current-location-btn svg {
-  width: 16px;
-  height: 16px;
-}
-
-.current-location-btn:hover {
-  background-color: #c8e6c9;
-}
-
-/* Restaurants Section */
-.restaurants-section {
-  text-align: center;
-  padding: 50px 20px;
-}
-
-.restaurants-section h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #000;
-  margin-bottom: 30px;
-}
-
-.restaurants-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Four items per row */
-  gap: 20px;
-  justify-items: center;
-  align-items: center;
-}
-
-.restaurant-item {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-}
-
-.restaurant-item img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.restaurant-item p {
-  margin-top: 10px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  background-color: #ffc107; /* Yellow background for text */
-  color: #000;
-  padding: 5px 10px;
-  border-radius: 15px;
-}
-
-.restaurant-item img:hover {
-  transform: scale(1.1); /* Zoom effect on hover */
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
-}
- /* Restaurants Section */
-.restaurants-section h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #000;
-  margin-bottom: 30px;
-  display: flex;
-  align-items: center; /* Center the logo vertically with text */
-  justify-content: center; /* Center the whole heading */
-  gap: 10px; /* Space between the text and logo */
-}
-
-.restaurants-section .logo-inline {
-  height: 1.2em; /* Match the size of the text */
-  width: auto; /* Maintain the aspect ratio */
-  vertical-align: middle; /* Align the logo properly with the text */
-}
-
-.anything-delivered-section {
-  text-align: center;
-  margin: 50px auto;
-}
-
-.anything-delivered-section h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #000;
-  margin-bottom: 30px;
-}
-
-.delivery-grid {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-
-.feature-item {
-  text-align: center;
-  max-width: 300px;
-}
-
-.feature-item img {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 20px;
-}
-
-.feature-item h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #000;
-  margin-bottom: 10px;
-}
-
-.feature-item p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #555;
-}
-
-.feature-item .highlight {
-  background-color: #fdd835;
-  border-radius: 5px;
-  padding: 0 5px;
-  font-weight: bold;
-  color: #000;
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff; /* Background color matches the image */
+    min-height: 400px; /* Adjust as needed */
+    gap: 30px;
+  }
+  
+  /* Video Container */
+  .video-container {
+    flex: 1; /* Takes up equal space */
+    max-width: 50%; /* Restrict width */
+  }
+  
+  .video-container video {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional for rounded corners */
+  }
+  
+  /* Titles Container */
+  .titles-container {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between elements */
+  }
+  
+  .titles-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+  }
+  
+  .titles-container h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Location Input */
+  .location-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .location-input input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .current-location-btn {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .current-location-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .current-location-btn:hover {
+    background-color: #c8e6c9;
+  }
+  
+  /* Restaurants Section */
+  .restaurants-section {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .restaurants-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 30px;
+  }
+  
+  .restaurants-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four items per row */
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .restaurant-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .restaurant-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .restaurant-item p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #ffc107; /* Yellow background for text */
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 15px;
+  }
+  
+  .restaurant-item img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+  }
+   /* Restaurants Section */
+  .restaurants-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center; /* Center the logo vertically with text */
+    justify-content: center; /* Center the whole heading */
+    gap: 10px; /* Space between the text and logo */
+  }
+  
+  .restaurants-section .logo-inline {
+    height: 1.2em; /* Match the size of the text */
+    width: auto; /* Maintain the aspect ratio */
+    vertical-align: middle; /* Align the logo properly with the text */
+  }
+  
+  .anything-delivered-section {
+    text-align: center;
+    margin: 50px auto;
+  }
+  
+  .anything-delivered-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 30px;
+  }
+  
+  .delivery-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .feature-item {
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  .feature-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .feature-item h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  .feature-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .feature-item .highlight {
+    background-color: #fdd835;
+    border-radius: 5px;
+    padding: 0 5px;
+    font-weight: bold;
+    color: #000;
+  }
+  /* Search input styles */
+.search-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-container input {
+    width: 30%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+  }
+  .no-results-message {
+    color: red;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+  }
+  

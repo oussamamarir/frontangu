@@ -1,0 +1,14 @@
+<!-- src/app/profile/profile.component.html -->
+<div class="profile-container">
+    <h2>User Profile</h2>
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" [(ngModel)]="user.name" />
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" [(ngModel)]="user.email" />
+    </div>
+    <button (click)="updateProfile()">Update Profile</button>
+  </div>
+  
